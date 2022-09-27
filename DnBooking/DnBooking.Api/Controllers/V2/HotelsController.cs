@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace DnBooking.Api.Controllers.V1
+namespace DnBooking.Api.Controllers.V2
 {
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-    public class HotelController : ControllerBase
+    public class HotelsController : ControllerBase
     {
-        public HotelController()
+        public HotelsController()
         {
 
         }
@@ -15,7 +15,7 @@ namespace DnBooking.Api.Controllers.V1
         [HttpGet]
         public IActionResult GetAllHotels()
         {
-            return Ok("Hello from Hotel Controller!");
+            return Ok("Hello from Hotel Controller v2 !");
         }
     }
 }
